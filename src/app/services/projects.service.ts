@@ -5,6 +5,21 @@ import { Injectable } from '@angular/core';
 })
 export class ProjectsService {
 
+  public icons:any[]=[
+    "assets/img/herramientas/html.png",
+    "assets/img/herramientas/javascript.png",
+    "assets/img/herramientas/typescript.png",
+    "assets/img/herramientas/angular.png",
+    "assets/img/herramientas/spring.png",
+    "assets/img/herramientas/java.png",
+    "assets/img/herramientas/mysql.png",
+    "assets/img/facebook.png",
+    "assets/img/github.png",
+    "assets/img/gmail.png",
+    "assets/img/perfil.png",
+    "assets/img/whatsapp.png",
+    "assets/img/perfil.jpg"
+  ]
 
   private projects:any[]=
     [

@@ -12,13 +12,13 @@
 
             <div class="row" style="margin-top: 1rem;">
                 <div class="col">
-                    <img src="../../../assets/img/herramientas/html.png" style="width: 4.5rem;" class="spacing">
-                    <img src="../../../assets/img/herramientas/javascript.png" style="width: 2rem;" class="spacing">
-                    <img src="../../../assets/img/herramientas/typescript.png" style="width: 2.3rem;" class="spacing">
-                    <img src="../../../assets/img/herramientas/angular.png" style="width: 3rem;" class="spacing">
-                    <img src="../../../assets/img/herramientas/spring.png" style="width: 3.5rem;" class="spacing">
-                    <img src="../../../assets/img/herramientas/java.png" style="width: 1.5rem;" class="spacing">
-                    <img src="../../../assets/img/herramientas/mysql.png" style="width: 3rem;" class="spacing">
+                    <img [src]="projectsService.icons[0]" style="width: 4.5rem;" class="spacing">
+                    <img [src]="projectsService.icons[1]" style="width: 2rem;" class="spacing">
+                    <img [src]="projectsService.icons[2]" style="width: 2.3rem;" class="spacing">
+                    <img [src]="projectsService.icons[3]" style="width: 3rem;" class="spacing">
+                    <img [src]="projectsService.icons[4]" style="width: 3.5rem;" class="spacing">
+                    <img [src]="projectsService.icons[5]" style="width: 1.5rem;" class="spacing">
+                    <img [src]="projectsService.icons[6]" style="width: 3rem;" class="spacing">
                 </div>
             </div>
         </div>
@@ -26,7 +26,7 @@
 
     <div class="album py-5 bg-light">
         <div class="container">
-            <h1>Proyectos Escolares</h1> <br>
+            <h1>Mis Proyectos</h1> <br>
             <div class="row">
                 <div class="col-md-4" *ngFor="let project of projects">
                     <div class="card mb-4 shadow-lg ">
@@ -48,26 +48,7 @@
             </div>
 
 
-            <h1>Proyectos Profesionales</h1> <br>
 
-            <div class="row">
-                <div class="col-md-4" *ngFor="let project of projectsProfesionales">
-                    <div class="card mb-4 shadow-lg ">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                        <div class="card-body">
-                            <h5 class="card-title">{{project.nombre}}</h5>
-
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-outline-info" (click)="verProject(project.id)">Ver mas</button>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
         </div>
     </div>
