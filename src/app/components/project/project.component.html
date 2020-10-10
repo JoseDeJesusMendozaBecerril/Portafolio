@@ -1,0 +1,32 @@
+<main role="main">
+
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1>{{project.nombre}}</h1>
+            <button type="button" class="btn btn-outline-dark btn-sm" disabled *ngFor="let h of this.project.herramientas" style="margin-right: 4px;">{{h}}</button>
+
+        </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <p>{{project.desc}}</p>
+        </div>
+    </div>
+
+    <br>
+    <div class="row">
+        <div class="col-md-4 " *ngFor="let i of this.project.imgs">
+            <img [src]="i" alt="..." class="img-thumbnail">
+        </div>
+
+
+
+
+
+
+
+        <!-- [...] Aquí se irían repitiendo más elementos <article> con cursos-->
+
+
+    </div>
